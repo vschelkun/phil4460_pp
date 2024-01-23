@@ -22,8 +22,8 @@ jobs:
       - name: Sync to notion
         run: python sync.py
         env:
-          NOTION_TOKEN: ${{secrets.NOTION_TOKEN}}
-          DATABASE_IDENTIFIER: ${{secrets.DATABASE_IDENTIFIER}}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          DATABASE_IDENTIFIER: ${{ secrets.DATABASE_IDENTIFIER }}
 
       - name: Update archive
         run: |
